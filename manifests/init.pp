@@ -43,6 +43,9 @@ class mymodule {
 		password => 'mpwardb',
 	}
 
+	# MongoDB Server
+	include '::mongodb::server'
+
 	# Create files
 	file { '/var/www/myproject/index.php':
 		ensure  => 'present',
