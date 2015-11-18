@@ -49,7 +49,7 @@ class mymodule {
 	# Create files
 	file { '/var/www/myproject/index.php':
 		ensure  => 'present',
-		content  => "Hello World. Sistema operativo $operatingsystem $operatingsystemrelease",
+		content  => "Hello World. Sistema operativo ${operatingsystem} ${operatingsystemrelease}",
 		mode    => '0644',
 	}
 
